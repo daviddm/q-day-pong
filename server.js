@@ -25,7 +25,8 @@ var express = require('express');
 var app = express();
 var server = require('http').createServer(app)
 var io = require('socket.io').listen(server, { log: false });
-server.listen(80);
+server.listen(8080);
+console.log('Started on port 8080')
 
 var PlayersController = function(){
     var that = {};
