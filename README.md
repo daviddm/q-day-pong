@@ -5,7 +5,12 @@ Install needed packages with
 npm i
 ```
 
-Lookup your local ip and remember it.
+Lookup your servers ip and remember it.
+
+Start the server by running
+```
+node server.js
+```
 
 On a desktop open the servers ip and correct port(default 8080).
 This will be the screen.
