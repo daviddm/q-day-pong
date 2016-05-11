@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gyro</title>
+    <script src="/js/require.js"></script>
+    <script type="application/javascript">
+        function init() {
+            if(navigator.userAgent.match(/Android|iPhone|iPad|iPod/i)) {
+//            if(true) {
+                console.log("Device Found");
+                require(["js/com"], function() {console.log('Device Loaded')});
+//                com.loadScript("/js/device.js")
+            } else {
+                console.log("Screen Found");
+                require(["js/com"], function() {console.log('Screen Loaded')});
+            }
+        }
+    </script>
+    <style>
+        canvas {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <h1>Gyro</h1>
+</body>
+</html>

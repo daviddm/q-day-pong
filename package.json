@@ -1,0 +1,11 @@
+{
+    "name": "Gyro",
+    "description": "Not sure yet",
+    "author": "David de Meijere <david.de.meijere@gmail.com>",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "3.4.8",
+        "socket.io": "0.9.16"
+    },
+    "engine": "0.8.x"
+}
